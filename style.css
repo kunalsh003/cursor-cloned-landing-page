@@ -22,6 +22,7 @@ body{
 }
 
 nav{
+    z-index: 1000;
     width: 100%;
     padding: 3vh 1.5vw;
     margin-top:0px;
@@ -98,6 +99,7 @@ main h2{
 }
 
 main button{
+    display: inline-flex;
   background-color: var(--primary-button-background-color);
   color: var(--primary-button-text-color);
   border-radius: 20px;
@@ -114,7 +116,7 @@ main img{
 }
 
 #logos-section {
-    padding-left: 2vw;
+    padding-left: 4vw;
     width:96vw;
     margin-top: 70px;
     margin-bottom: 0;
@@ -128,8 +130,9 @@ main img{
 #logos-section div{
   width:90%;   
   display: flex;
+  margin-top: 10vh;
   justify-content: center;
-  gap:10px;
+  gap:18px;
 }
 
 #logos-section div img {
@@ -140,8 +143,8 @@ main img{
 }
 
 #features-section{
- width:80%;
- margin:160px;
+ width:96vw;
+ margin:2vw;
  margin-top:100px;
  display:flex;
  flex-direction: column;
@@ -155,6 +158,7 @@ main img{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ border-radius: 0.5rem;
  gap:30px;
 }
 
@@ -201,8 +205,8 @@ main img{
 
 #testimonials{
   color:var(--text-color);
-  width: 80%;
-  margin: 150px;
+  width: 96%;
+  margin:40vh 2vw;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap:10px;
@@ -210,16 +214,20 @@ main img{
 
 #testimonials h2{ 
    text-align: center;
-   font-size: 30px;
+   font-size: 40px;
    font-weight: 500;
    grid-column-start: 1;
    grid-column-end: 4;
    margin-bottom: 30px;
+
 }
 
 #testimonials .quote-card{
+    font-size: large;
  background-color: var(--card-background-color);   
- padding: 10px 20px;
+ padding: 15px 20px;
+ line-height: 1.5;
+ border-radius: 0.5rem;
 }
 
 #testimonials .quote-card p{
@@ -248,8 +256,8 @@ main img{
 
 #feature-cards-section{
   color:var(--text-color);
-  width: 80%;
-  margin: 150px;
+  width: 96%;
+  margin: 2vw;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap:10px; 
@@ -264,7 +272,8 @@ main img{
 
 #feature-cards-section .feature-card{
  background-color: var(--card-background-color);   
- padding: 10px 20px;
+ padding: 20px 20px;
+ border-radius: 0.5rem;
 }
 
 #feature-cards-section .feature-card>:nth-child(2)
@@ -288,8 +297,9 @@ main img{
 }
 
 #changelog{
-    width: 80%;
-    margin: 150px;
+    width: 96%;
+    margin: 2vw;
+    margin-top: 13rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
@@ -316,6 +326,7 @@ main img{
 }
 
 #changelog .changelog-card pre{
+    font-size: 20px;
     color: var(--text--secondary-color);
 }
 
@@ -324,11 +335,13 @@ main img{
 }
 
 #changelog .changelog-card p {
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 #changelog button {
+    display:flex;
     color: var(--tertiary-button-text-color);
     border: none;
     outline: none;
@@ -338,12 +351,14 @@ main img{
 }
 
 #about{
-    width: 80%;
-    margin:150px;
+    width: 96%;
+    margin:2vw;
+    margin-top: 10rem;
     display: flex;
     gap:10px;
     padding: 15px 20px;
     background-color: var(--card-background-color);
+    border-radius: 0.5rem;
 }
 
 #about .about-left{
@@ -374,13 +389,22 @@ main img{
 }
 
 #highlights{
+    margin-top: 15rem;
     background-color: var(--card-background-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+    padding-bottom: 200px;
+
+}
+.sticky-element{
+    position: sticky;
+    top:100px;
 }
 
+
 #highlights>:first-child {
+    width: 10rem;
   margin-left: 6%;
   margin-top: 60px;  
 }
@@ -445,6 +469,7 @@ main img{
     font-weight: 500;
 }
 .final button{
+    display: inline-flex;
   background-color: var(--primary-button-background-color);
   color: var(--primary-button-text-color);
   border-radius: 20px;
@@ -458,9 +483,9 @@ main img{
 .grid {
  display: grid;
  grid-template-columns: repeat(5,1fr);
- padding-left: 100px;
+ padding-left: 2rem;
  gap: 10px;
- padding-right: 100px;
+ padding-right: 7rem;
  background-color: var(--card-background-color);
  padding-top: 70px;
  }
